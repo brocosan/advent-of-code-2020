@@ -22,7 +22,6 @@ func getContentFromFile() []int {
 	for scanner.Scan() {
 		number, _ := strconv.Atoi(scanner.Text())
 		numbers = append(numbers, number)
-		// fmt.Println(scanner.Text())
 	}
 	if err := scanner.Err(); err != nil {
 		panic(err)
